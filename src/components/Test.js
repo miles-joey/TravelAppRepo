@@ -20,9 +20,22 @@ function Test() {
         <div>
     <h1>Country List Test</h1>
     <ul>
-        {countries.map(country => (
-        <li key={country.cca3}>{country.name.common}</li>
-        ))}
+        {countries.map(country => {
+            const name=country.name.common
+            const region=country.region
+            // const language=country.languages.ara
+            // const currency=country.currencies.SAR.name
+            const sideOfRoad=country.car.side
+            return(
+                <li className='countryContainer' key={country.cca3}>
+                    <div>{name}</div>
+                    <div>{region}</div>
+                    {/* <div>{language}</div> */}
+                    {/* <div>{currency}</div> */}
+                    <div>Drive on the {sideOfRoad} side of the road</div>
+                </li>
+            )
+    })}
     </ul>
     </div>
     );
