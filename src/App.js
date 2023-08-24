@@ -2,14 +2,14 @@
 import './App.css';
 import Header from './components/Header.js';
 // import CallingAPI from './components/CallingAPI.js';
-import Test from './components/Test.js';
+import GetCountry from './components/GetCountry';
 
 function App() {
   return (
     <div className="App">
       <Header />
       {/* <CallingAPI /> */}
-      <Test />
+      <GetCountry />
     </div>
   );
 }

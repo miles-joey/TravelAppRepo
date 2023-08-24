@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  list-style: none;
+}
+
+
+.countryContainer{
+  border: 1px solid black;
+  margin: 30px;
+}
+
+
+.countryName{
+text-decoration: underline;
+font-size:36px;
+margin-bottom: 10px;
+}
+
+.region{
+  font-size: 26px;
+}
+
+.languages{
+  font-style: italic;
+}
+
+.languagesDirection {
+  display: flex;
+  flex-direction: row;
+}
+
+.driveSide{
+  color: blueviolet;
+}
+
+.currency{
+  color:orange;
+}
