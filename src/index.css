@@ -1,5 +1,17 @@
+/* Style guide */
+/* Green lime: #cad76c
+Green lightgrey: #c2d1ac
+Purple: #9786b7
+Yellow: #ead163
+light blue accent: #a7d5dc
+another blue: #bee1ea
+BG blue: #97cdd4
+other blue i like: #77a0a2 */
+
+
+
 body {
-  margin: 0;
+  margin: 0px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -16,35 +28,140 @@ code {
 }
 
 
+/*********GetCountry************/
+
+h2{
+  margin: 0px;
+  padding: 0px;
+  /* background-color: aquamarine; */
+}
+
+ul{
+  margin:0px;
+  padding:0px;
+}
+
+li{
+  max-width: 1000px;
+  /* min-width: 300px; */
+  /* maybe use flex basis to constrain max width instead? */
+}
+
+.returnedCountries{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: whitesmoke; */
+}
+
 .countryContainer{
   border: 1px solid black;
-  margin: 30px;
+  margin: 20px;
+  padding: 50px;
 }
 
 
 .countryName{
 text-decoration: underline;
 font-size:36px;
-margin-bottom: 10px;
+margin-bottom: -5px;
 }
 
 .region{
   font-size: 26px;
+  margin-bottom: 30px;
+
+  display: flex;
+  /* justify-content:  ; */
+}
+
+.timezone {
+  font-size: 13px;
+}
+
+.capital{
+  margin-bottom: 20px;
+}
+
+.capital p{
+  margin:0px;
 }
 
 .languages{
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 .languagesDirection {
   display: flex;
   flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+.languages p{
+  margin: 0px;
 }
 
 .driveSide{
   color: blueviolet;
+  margin-bottom: 20px;
 }
 
-.currency{
+.sideOfRoadFormatting{
+  font-size: 25px;
+  text-transform:uppercase;
+  display: inline;
+}
+
+.currency {
+  margin-bottom: 20px;
+}
+
+.currency p{
   color:orange;
+  margin:0px;
+}
+
+.population p{
+  margin:0px;
+}
+
+
+/*********app part************/
+.app{
+  
+}
+/*********header************/
+h1{
+  margin:0 auto;
+}
+
+header{
+  background-color: #f9f6ea;
+  margin-top: 0px;
+}
+
+header p{
+  /* background-color: #f9f6ea; */
+  margin: 0px;
+  margin-top:30px;
+}
+
+
+/*********footer wave************/
+/* TO DO ----create waves above footer */
+
+/*********footer************/
+footer{
+  background-color: #97ccd3;
+  margin:0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+footer p{
+
 }

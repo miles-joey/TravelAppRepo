@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
+// experimenting with shuffling results 
+function randomizeCountries(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array
+}
+// end experimetn 
+
+
 function GetCountry() {
     const [countries, setCountries] = useState([]);
 
@@ -16,73 +27,85 @@ function GetCountry() {
         });
     }, []);
 
+// experiemtning 
+    const shuffledCountries = randomizeCountries([...countries]);
+// experiemtning
+
 
 let finalCountries = 0;
 
     return (
         <div>
-    <h1>Country List</h1>
-    <ul>
-        {countries.map(country => {
+    <h2>Country List</h2>
+    <ul className='returnedCountries'>
+        {shuffledCountries.map(country => {
+            // change this number if you want to add more results
             if (finalCountries < 3) {
 
             const name=country.name.common
             const region=country.region
-
-            // const language=country.languages
-            // const allLanguages=[]
-            //     for (const mainLanguage in language){
-            //         allLanguages.push(language[mainLanguage])
-            //     }
-                
+            const capital=country.capital
+            const flag=country.flag
             const sideOfRoad=country.car.side
-            // const currency=country.currencies
-            // const allCurrencies=[]
-            //     for (const mainCurrency in currency){
-            //         allCurrencies.push(currency[mainCurrency])
-            
+            const population=country.population
+            const timezone=country.timezones
+
             const languages=country.languages
             const allLanguages = Object.values(languages || {});
+
+            const currency=country.currencies
+            const allCurrencies = Object.values(currency || {});
             
 
             finalCountries++;
+            // this is part of the randomizing & number of countries displayed
             return(
                 <li className='countryContainer' key={country.cca3}>
-                    <div className='countryName'>{name}</div>
+                    <div className='countryName'>{name}&ensp;{flag}</div>
+
                     <div className='region'>{region}</div>
 
-                    {/* <div className='languages'>
-                        {allLanguages.map((response)=>{
-                            return(
-                                <p>{response}</p>
-                            )
-                        })}
-                    </div> */}
+                    <div className='capital'>
+                        <p>Capital City:</p>
+                        {capital}
+                    </div>
 
-
-                    {/* <div className='currency'>
-                        {allCurrencies.map((response)=>{
-                            return(
-                                <p>{response}</p>
-                            )
-                        })
-                        }
-                    </div> */}
-                    <div className='driveSide'>Drive on the {sideOfRoad} side of the road</div>
+                    <div className='timezone'>
+                        {timezone}
+                    </div>
+                    <div className='driveSide'>Drive on the <div className='sideOfRoadFormatting'>{sideOfRoad}</div> side of the road</div>
+                    {/* add code for 'left' one color, 'right' another color*/}
 
                     <div className='languages'>
                         <p>Top 3 Languages:</p>
-                                {allLanguages.slice(0,3).map((response, index) => (
-                                    <>
-                                    <ul className='languagesDirection'>
-                                        <li key={index}>{response}</li>
-                                    </ul>
-                                    </>
-                                ))}
-                            </div>
+                            {allLanguages.slice(0,3).map((response, index) => (
+                            <>
+                            <ul className='languagesDirection'>
+                                <li key={index}>{response}</li>
+                            </ul>
+                            </>
+                        ))}
+                    </div>
+
+                    <div className='currency'>
+                        <p>Currencies:</p>
+                        {allCurrencies.map((currency, index) => (
+                        <>
+                        <ul key={index}>
+                            <li>{currency.name}</li>
+                        </ul>
+                        </>
+                        ))}
+                    </div>
+
+                    <div className='population'>
+                        <p>Population:</p>
+                        {population}
+                    </div>
+
                 </li>
             )
-                                }
+        }
     })}
     </ul>
     </div>

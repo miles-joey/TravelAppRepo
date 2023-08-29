@@ -1,6 +1,7 @@
 
 import './App.css';
 import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 // import CallingAPI from './components/CallingAPI.js';
 import GetCountry from './components/GetCountry';
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       {/* <CallingAPI /> */}
       <GetCountry />
+      <Footer />
     </div>
   );
 }
