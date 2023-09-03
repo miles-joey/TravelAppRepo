@@ -2,15 +2,19 @@
 import './App.css';
 import Header from './components/Header.js';
 import Footer from './components/Footer.js';
-// import CallingAPI from './components/CallingAPI.js';
+import Button from './components/Button.js';
+import CallingAPI from './components/CallingAPI.js';
 import GetCountry from './components/GetCountry';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <CallingAPI /> */}
-      <GetCountry />
+      {/* <CallingAPI />
+      being called in GetCountry */}
+      <Button />
+      {/* <GetCountry />
+      this is now being called in the Button component */}
       <Footer />
     </div>
   );

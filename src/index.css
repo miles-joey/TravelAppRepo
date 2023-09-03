@@ -8,24 +8,42 @@ another blue: #bee1ea
 BG blue: #97cdd4
 other blue i like: #77a0a2 */
 
+/* google font family rules */
+/* font-family: 'PT Serif', serif;
+font-family: 'Six Caps', sans-serif; */
 
+
+
+* {
+  font-family:'PT Serif', serif;
+  list-style: none;
+
+  text-wrap: wrap;
+}
+
+h1, h2, {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 120px;
+}
+
+h2{
+  font-size: 70px;
+}
 
 body {
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-*{
-  list-style: none;
-}
+
 
 
 /*********GetCountry************/
@@ -57,6 +75,9 @@ li{
   border: 1px solid black;
   margin: 20px;
   padding: 50px;
+
+  background-color: rgba(255, 255, 255, 0.895);
+  border-radius: 12% 12% 12% 12%; 
 }
 
 
@@ -64,6 +85,10 @@ li{
 text-decoration: underline;
 font-size:36px;
 margin-bottom: -5px;
+
+font-family: 'Six Caps', sans-serif;
+font-size: 70px;
+letter-spacing: 3px;
 }
 
 .region{
@@ -121,6 +146,19 @@ margin-bottom: -5px;
   margin:0px;
 }
 
+.currencyNameSymbol{
+  display: flex;
+}
+
+.currencyName{
+  font-size: 22px;
+}
+
+.currencySymbol {
+  font-weight: bold;
+  font-size: 22px;
+}
+
 .population p{
   margin:0px;
 }
@@ -144,6 +182,17 @@ header p{
   /* background-color: #f9f6ea; */
   margin: 0px;
   margin-top:30px;
+}
+
+
+/********* background ************/
+.secretDiv {
+  width: 100vw;
+  margin:0px auto;
+
+  background: url('../assets/pexels-andrea-piacquadio-3769138.jpg');
+  background-repeat: repeat;
+  background-size: 100vw auto;
 }
 
 

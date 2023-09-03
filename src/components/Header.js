@@ -3,7 +3,7 @@ const Header = () => {
     return (
         <header>
             <h1>Travel Idea Generator</h1>
-            <p>LETS GO!</p>
+            <p>Need help finding your next travel destination?</p>
         </header>
     )
 }

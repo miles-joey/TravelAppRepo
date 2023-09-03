@@ -8,7 +8,8 @@ function randomizeCountries(array) {
     }
     return array
 }
-// end experimetn 
+// used Fisher-Yates Shuffle. found here:
+// https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
 
 
 function GetCountry() {
@@ -27,23 +28,21 @@ function GetCountry() {
         });
     }, []);
 
-// experiemtning 
     const shuffledCountries = randomizeCountries([...countries]);
-// experiemtning
 
 
 let finalCountries = 0;
 
     return (
-        <div>
-    <h2>Country List</h2>
+    <div>
+    {/* <h2>Country List</h2> */}
     <ul className='returnedCountries'>
         {shuffledCountries.map(country => {
             // change this number if you want to add more results
             if (finalCountries < 3) {
 
             const name=country.name.common
-            const region=country.region
+            const region=country.subregion
             const capital=country.capital
             const flag=country.flag
             const sideOfRoad=country.car.side
@@ -92,7 +91,7 @@ let finalCountries = 0;
                         {allCurrencies.map((currency, index) => (
                         <>
                         <ul key={index}>
-                            <li>{currency.name}</li>
+                            <li className='currencyNameSymbol'><div className='currencyName'>{currency.name}</div>&ensp;&ensp;<div className='currencySymbol'>{currency.symbol}</div></li>
                         </ul>
                         </>
                         ))}
