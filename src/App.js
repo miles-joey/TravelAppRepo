@@ -12,7 +12,8 @@ function App() {
       <Header />
       {/* <CallingAPI />
       being called in GetCountry */}
-      <Button />
+      {/* <Button /> */}
+      {/*being called in header */}
       {/* <GetCountry />
       this is now being called in the Button component */}
       <Footer />

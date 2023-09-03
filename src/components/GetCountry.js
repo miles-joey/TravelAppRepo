@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
+
+function TourismClick(link) {
+    window.open(link, '_blank');
+}
+
+
 // experimenting with shuffling results 
 function randomizeCountries(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -59,32 +65,20 @@ let finalCountries = 0;
             finalCountries++;
             // this is part of the randomizing & number of countries displayed
             return(
-                <li className='countryContainer' key={country.cca3}>
+                <li onClick={() => TourismClick(`https://www.google.com/search?q=tourism+${name}`
+                )} className='countryContainer' key={country.cca3}>
                     <div className='countryName'>{name}&ensp;{flag}</div>
 
                     <div className='region'>{region}</div>
-
+                    <div className='timezone'>
+                        {timezone}
+                    </div>
                     <div className='capital'>
                         <p>Capital City:</p>
                         {capital}
                     </div>
 
-                    <div className='timezone'>
-                        {timezone}
-                    </div>
-                    <div className='driveSide'>Drive on the <div className='sideOfRoadFormatting'>{sideOfRoad}</div> side of the road</div>
-                    {/* add code for 'left' one color, 'right' another color*/}
 
-                    <div className='languages'>
-                        <p>Top 3 Languages:</p>
-                            {allLanguages.slice(0,3).map((response, index) => (
-                            <>
-                            <ul className='languagesDirection'>
-                                <li key={index}>{response}</li>
-                            </ul>
-                            </>
-                        ))}
-                    </div>
 
                     <div className='currency'>
                         <p>Currencies:</p>
@@ -97,11 +91,26 @@ let finalCountries = 0;
                         ))}
                     </div>
 
+                    <div className='languages'>
+                        <p>Top 3 Languages:</p>
+                            {allLanguages.slice(0,3).map((response, index) => (
+                            <>
+                            <ul className='languagesDirection'>
+                                <li key={index}>{response}</li>
+                            </ul>
+                            </>
+                        ))}
+                    </div>
+
                     <div className='population'>
                         <p>Population:</p>
                         {population}
                     </div>
-
+                    
+                    <div className='driveSide'>
+                        Drive on the <div className='sideOfRoadFormatting'>{sideOfRoad}</div> side of the road
+                    </div>
+                    {/* add code for 'left' one color, 'right' another color*/}
                 </li>
             )
         }

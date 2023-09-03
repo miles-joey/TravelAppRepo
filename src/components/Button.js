@@ -3,7 +3,7 @@ import GetCountry from './GetCountry';
 
 
 function Button() {
-    const [buttonText, setButtonText] = useState('Click Me');
+    const [buttonText, setButtonText] = useState('Lets Go!');
     const [isVisible, setVisibility] = useState(false);
 
     const handleClick = () => {
@@ -12,8 +12,8 @@ function Button() {
     };
 
     return (
-    <div>
-        <button onClick={handleClick} className="my-button">
+    <div className='travelButton'>
+        <button onClick={handleClick} className="travelButton">
         {buttonText}
         </button>
         {isVisible && (

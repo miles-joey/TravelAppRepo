@@ -14,6 +14,21 @@ font-family: 'Six Caps', sans-serif; */
 
 
 
+/* OTHERS:
+font-family: 'Bungee Shade', cursive;
+font-family: 'IM Fell Double Pica SC', serif;
+font-family: 'Megrim', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/
+
+
+
 * {
   font-family:'PT Serif', serif;
   list-style: none;
@@ -21,7 +36,28 @@ font-family: 'Six Caps', sans-serif; */
   text-wrap: wrap;
 }
 
-h1, h2, {
+h1 {
+  font-family: 'Megrim', cursive;
+  font-size: 100px;
+  text-align: center;
+
+  /* test these */
+/* 
+font-family: 'Bungee Shade', cursive;
+font-family: 'IM Fell Double Pica SC', serif;
+font-family: 'Megrim', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/ 
+}
+
+
+h2, {
   font-family: 'Six Caps', sans-serif;
   font-size: 120px;
 }
@@ -60,9 +96,15 @@ ul{
 }
 
 li{
-  max-width: 1000px;
+  min-width: 300px;
+  max-width: 900px;
   /* min-width: 300px; */
   /* maybe use flex basis to constrain max width instead? */
+}
+
+li:hover{
+  border: 3px dotted black;
+  cursor: url('/assets/Airplane_silhouette.svg.png'), auto;
 }
 
 .returnedCountries{
@@ -72,7 +114,7 @@ li{
 }
 
 .countryContainer{
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
   margin: 20px;
   padding: 50px;
 
@@ -89,31 +131,41 @@ margin-bottom: -5px;
 font-family: 'Six Caps', sans-serif;
 font-size: 70px;
 letter-spacing: 3px;
+/* text-align: center; */
 }
 
 .region{
   font-size: 26px;
   margin-bottom: 30px;
 
-  display: flex;
-  /* justify-content:  ; */
-}
+/* text-align: center; */
 
-.timezone {
-  font-size: 13px;
-}
-
-.capital{
-  margin-bottom: 20px;
 }
 
 .capital p{
   margin:0px;
+  font-size: 15px;
+}
+
+.capital{
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 25px;
+}
+
+
+.languages p{
+  margin: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 15px;
 }
 
 .languages{
   font-style: italic;
   margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
 }
 
 .languagesDirection {
@@ -122,28 +174,32 @@ letter-spacing: 3px;
   /* justify-content: space-around; */
 }
 
-.languages p{
-  margin: 0px;
-}
-
 .driveSide{
-  color: blueviolet;
-  margin-bottom: 20px;
+  /* color: blueviolet; */
+  margin-top: 30px;
+  
+  text-align: center;
+  font-size: 15px;
 }
 
 .sideOfRoadFormatting{
-  font-size: 25px;
+  font-size: 22px;
   text-transform:uppercase;
   display: inline;
+  font-style: bold;
+}
+
+.currency p{
+  /* color:orange; */
+  margin:0px;
+  text-align: left;
+  font-size: 15px;
 }
 
 .currency {
   margin-bottom: 20px;
-}
-
-.currency p{
-  color:orange;
-  margin:0px;
+  text-align: left;
+  font-size: 20px;
 }
 
 .currencyNameSymbol{
@@ -151,23 +207,34 @@ letter-spacing: 3px;
 }
 
 .currencyName{
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .currencySymbol {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .population p{
   margin:0px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.timezone {
+  font-size: 13px;
+
+  margin-top: -25px;
+  margin-bottom: 30px;
 }
 
 
 /*********app part************/
-.app{
+/* .app{
   
-}
+} */
+
+
 /*********header************/
 h1{
   margin:0 auto;
@@ -178,12 +245,43 @@ header{
   margin-top: 0px;
 }
 
-header p{
+.headerP{
   /* background-color: #f9f6ea; */
   margin: 0px;
-  margin-top:30px;
+  /* margin-top:0px; */
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Meow Script', cursive;
+  
+}
+  /* test these */
+/* 
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/ 
+
+
+.travelButton{
+  text-align: center;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 40px;
+  
+
 }
 
+button{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
 
 /********* background ************/
 .secretDiv {
