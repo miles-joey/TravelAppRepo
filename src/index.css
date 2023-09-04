@@ -1,3 +1,14 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
 /* Style guide */
 /* Green lime: #cad76c
 Green lightgrey: #c2d1ac
@@ -38,7 +49,7 @@ font-family: 'Splash', cursive;
 
 h1 {
   font-family: 'Megrim', cursive;
-  font-size: 100px;
+  font-size:6rem;
   text-align: center;
 
   /* test these */
@@ -59,12 +70,9 @@ font-family: 'Splash', cursive;
 
 h2, {
   font-family: 'Six Caps', sans-serif;
-  font-size: 120px;
+  font-size: 7rem;
 }
 
-h2{
-  font-size: 70px;
-}
 
 body {
   margin: 0px;
@@ -96,8 +104,8 @@ ul{
 }
 
 li{
-  min-width: 300px;
-  max-width: 900px;
+  min-width: 30rem;
+  max-width: 90rem;
   /* min-width: 300px; */
   /* maybe use flex basis to constrain max width instead? */
 }
@@ -115,8 +123,8 @@ li:hover{
 
 .countryContainer{
   border: 1px solid rgba(0, 0, 0, 0);
-  margin: 20px;
-  padding: 50px;
+  margin: 2rem;
+  padding: 5rem;
 
   background-color: rgba(255, 255, 255, 0.895);
   border-radius: 12% 12% 12% 12%; 
@@ -125,46 +133,46 @@ li:hover{
 
 .countryName{
 text-decoration: underline;
-font-size:36px;
-margin-bottom: -5px;
+font-size:3.6rem;
+margin-bottom: -0.5rem;
 
 font-family: 'Six Caps', sans-serif;
-font-size: 70px;
-letter-spacing: 3px;
+font-size: 7rem;
+letter-spacing: 0.3rem;
 /* text-align: center; */
 }
 
 .region{
-  font-size: 26px;
-  margin-bottom: 30px;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
 
 /* text-align: center; */
 
 }
 
 .capital p{
-  margin:0px;
-  font-size: 15px;
+  margin:0rem;
+  font-size: 1.5rem;
 }
 
 .capital{
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: left;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 
 .languages p{
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: 0rem;
+  margin-bottom: 1rem;
   text-align: left;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .languages{
   font-style: italic;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 2rem;
+  font-size: 2rem;
   text-align: left;
 }
 
