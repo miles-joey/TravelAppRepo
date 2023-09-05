@@ -82,22 +82,22 @@ let finalCountries = 0;
                     <div className='currency'>
                         <p>Currencies:</p>
                         {allCurrencies.map((currency, index) => (
-                        <>
+                        
                         <ul key={index}>
                             <li className='currencyNameSymbol'><div className='currencyName'>{currency.name}</div>&ensp;&ensp;<div className='currencySymbol'>{currency.symbol}</div></li>
                         </ul>
-                        </>
+                        
                         ))}
                     </div>
 
                     <div className='languages'>
                         <p>Top 3 Languages:</p>
                             {allLanguages.slice(0,3).map((response, index) => (
-                            <>
+                            
                             <ul className='languagesDirection'>
                                 <li key={index}>{response}</li>
                             </ul>
-                            </>
+                            
                         ))}
                     </div>
 
