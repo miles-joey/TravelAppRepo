@@ -1,13 +1,328 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* Style guide */
+/* Green lime: #cad76c
+Green lightgrey: #c2d1ac
+Purple: #9786b7
+Yellow: #ead163
+light blue accent: #a7d5dc
+another blue: #bee1ea
+BG blue: #97cdd4
+other blue i like: #77a0a2 */
+
+/* google font family rules */
+/* font-family: 'PT Serif', serif;
+font-family: 'Six Caps', sans-serif; */
+
+
+
+/* OTHERS:
+font-family: 'Bungee Shade', cursive;
+font-family: 'IM Fell Double Pica SC', serif;
+font-family: 'Megrim', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/
+
+
+
+* {
+  font-family:'PT Serif', serif;
+  list-style: none;
+
+  text-wrap: wrap;
+}
+
+h1 {
+  font-family: 'Megrim', cursive;
+  font-size:6rem;
+  text-align: center;
+
+  /* test these */
+/* 
+font-family: 'Bungee Shade', cursive;
+font-family: 'IM Fell Double Pica SC', serif;
+font-family: 'Megrim', cursive;
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/ 
+}
+
+
+h2, {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 7rem;
+}
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  margin: 0px;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/*********GetCountry************/
+
+h2{
+  margin: 0px;
+  padding: 0px;
+  /* background-color: aquamarine; */
+}
+
+ul{
+  margin:0px;
+  padding:0px;
+}
+
+li{
+  min-width: 30rem;
+  max-width: 90rem;
+  /* min-width: 300px; */
+  /* maybe use flex basis to constrain max width instead? */
+}
+
+li:hover{
+  border: 10px dotted yellow;
+  cursor: url('/assets/Airplane_silhouette.svg.png'), auto;
+}
+
+.returnedCountries{
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: whitesmoke; */
+}
+
+.countryContainer{
+  border: 1px solid rgba(0, 0, 0, 0);
+  margin: 2rem;
+  padding: 5rem;
+
+  background-color: rgba(255, 255, 255, 0.895);
+  border-radius: 12% 12% 12% 12%; 
+}
+
+
+.countryName{
+text-decoration: underline;
+font-size:3.6rem;
+margin-bottom: -0.5rem;
+
+font-family: 'Six Caps', sans-serif;
+font-size: 7rem;
+letter-spacing: 0.3rem;
+/* text-align: center; */
+}
+
+.region{
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+
+/* text-align: center; */
+
+}
+
+.capital p{
+  margin:0rem;
+  font-size: 1.5rem;
+}
+
+.capital{
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 2.5rem;
+}
+
+
+.languages p{
+  margin: 0rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.languages{
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.languagesDirection {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+.driveSide{
+  /* color: blueviolet; */
+  margin-top: 3rem;
+  
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sideOfRoadFormatting{
+  font-size: 2.2rem;
+  text-transform:uppercase;
+  display: inline;
+  font-style: bold;
+}
+
+.currency p{
+  /* color:orange; */
+  margin:0rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.currency {
+  margin-bottom: 2rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.currencyNameSymbol{
+  display: flex;
+}
+
+.currencyName{
+  font-size: 2.5rem;
+}
+
+.currencySymbol {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.population p{
+  margin:0rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.timezone {
+  font-size: 1.3rem;
+
+  margin-top: -2.5rem;
+  margin-bottom: 4rem;
+}
+
+
+/*********app part************/
+/* .app{
+  
+} */
+
+
+/*********header************/
+h1{
+  margin:0 auto;
+}
+
+header{
+  background-color: #f9f6ea;
+  margin-top: 0rem;
+}
+
+.headerP{
+  /* background-color: #f9f6ea; */
+  margin: 0rem;
+  /* margin-top:0px; */
+  text-align: center;
+  font-size: 4rem;
+  font-family: 'Meow Script', cursive;
+  
+}
+  /* test these */
+/* 
+font-family: 'Meow Script', cursive;
+font-family: 'Nabla', cursive;
+font-family: 'Oooh Baby', cursive;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik 80s Fade', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Splash', cursive;
+*/ 
+
+
+.travelButton{
+  text-align: center;
+  font-family: 'Oooh Baby', cursive;
+  font-size: 4rem;
+  
+
+}
+
+button{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/********* background ************/
+.secretDiv {
+  width: 100vw;
+  margin:0px auto;
+
+  background: url('../assets/pexels-andrea-piacquadio-3769138.jpg');
+  background-repeat: repeat;
+  background-size: 100vw auto;
+}
+
+
+/*********footer wave************/
+/* TO DO ----create waves above footer */
+
+.bgColorFill{
+  background-color: #97ccd3;
+  margin: 0px;
+}
+
+/*********footer************/
+footer{
+  background-color: #97ccd3;
+  margin:0 auto;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+footer p{
+
 }

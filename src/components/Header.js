@@ -1,9 +1,14 @@
+import Button from '../components/Button.js';
+
 
 const Header = () => {
     return (
         <header>
             <h1>Travel Idea Generator</h1>
-            <p>LETS GO!</p>
+            <p className='headerP'>Need help finding your next travel destination?</p>
+
+            <Button />
+
         </header>
     )
 }
