@@ -306,6 +306,11 @@ button{
 /*********footer wave************/
 /* TO DO ----create waves above footer */
 
+.bgColorFill{
+  background-color: #97ccd3;
+  margin: 0px;
+}
+
 /*********footer************/
 footer{
   background-color: #97ccd3;
