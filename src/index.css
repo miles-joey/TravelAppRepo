@@ -111,7 +111,7 @@ li{
 }
 
 li:hover{
-  border: 3px dotted black;
+  border: 10px dotted yellow;
   cursor: url('/assets/Airplane_silhouette.svg.png'), auto;
 }
 
@@ -145,6 +145,7 @@ letter-spacing: 0.3rem;
 .region{
   font-size: 2.6rem;
   margin-bottom: 3rem;
+  margin-top: 1rem;
 
 /* text-align: center; */
 
@@ -184,14 +185,14 @@ letter-spacing: 0.3rem;
 
 .driveSide{
   /* color: blueviolet; */
-  margin-top: 30px;
+  margin-top: 3rem;
   
   text-align: center;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .sideOfRoadFormatting{
-  font-size: 22px;
+  font-size: 2.2rem;
   text-transform:uppercase;
   display: inline;
   font-style: bold;
@@ -199,15 +200,15 @@ letter-spacing: 0.3rem;
 
 .currency p{
   /* color:orange; */
-  margin:0px;
+  margin:0rem;
   text-align: left;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .currency {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   text-align: left;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .currencyNameSymbol{
@@ -215,25 +216,25 @@ letter-spacing: 0.3rem;
 }
 
 .currencyName{
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .currencySymbol {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 
 .population p{
-  margin:0px;
+  margin:0rem;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .timezone {
-  font-size: 13px;
+  font-size: 1.3rem;
 
-  margin-top: -25px;
-  margin-bottom: 30px;
+  margin-top: -2.5rem;
+  margin-bottom: 4rem;
 }
 
 
@@ -250,15 +251,15 @@ h1{
 
 header{
   background-color: #f9f6ea;
-  margin-top: 0px;
+  margin-top: 0rem;
 }
 
 .headerP{
   /* background-color: #f9f6ea; */
-  margin: 0px;
+  margin: 0rem;
   /* margin-top:0px; */
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   font-family: 'Meow Script', cursive;
   
 }
@@ -277,7 +278,7 @@ font-family: 'Splash', cursive;
 .travelButton{
   text-align: center;
   font-family: 'Oooh Baby', cursive;
-  font-size: 40px;
+  font-size: 4rem;
   
 
 }
