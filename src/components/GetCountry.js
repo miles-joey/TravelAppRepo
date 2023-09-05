@@ -43,7 +43,7 @@ let finalCountries = 0;
     <div>
     {/* <h2>Country List</h2> */}
     <ul className='returnedCountries'>
-        {shuffledCountries.map(country => {
+        {shuffledCountries.map((country) => {
             // change this number if you want to add more results
             if (finalCountries < 3) {
 
@@ -77,7 +77,6 @@ let finalCountries = 0;
                         <p>Capital City:</p>
                         {capital}
                     </div>
-
 
 
                     <div className='currency'>
