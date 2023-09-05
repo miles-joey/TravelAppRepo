@@ -95,11 +95,11 @@ let finalCountries = 0;
                     <div className='languages'>
                         <p>Top 3 Languages:</p>
                             {allLanguages.slice(0,3).map((response, index) => (
-                            
+                            <React.Fragment key={index}>
                             <ul className='languagesDirection'>
                                 <li key={index}>{response}</li>
                             </ul>
-                            
+                            </React.Fragment>
                         ))}
                     </div>
 
