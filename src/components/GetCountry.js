@@ -82,10 +82,12 @@ let finalCountries = 0;
                     <div className='currency'>
                         <p>Currencies:</p>
                         {allCurrencies.map((currency, index) => (
-                        
-                        <ul key={index}>
-                            <li className='currencyNameSymbol'><div className='currencyName'>{currency.name}</div>&ensp;&ensp;<div className='currencySymbol'>{currency.symbol}</div></li>
-                        </ul>
+                        <div key={index}>
+                            <ul>
+                                <li className='currencyNameSymbol'><div className='currencyName'>{currency.name}</div>&ensp;&ensp;<div className='currencySymbol'>{currency.symbol}</div></li>
+                            </ul>
+                            </div>
+
                         
                         ))}
                     </div>
